@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { IonCard,IonImg,IonCardHeader,IonCardTitle,IonCardContent,IonButton } from '@ionic/angular/standalone';
 
@@ -7,7 +8,7 @@ import { IonCard,IonImg,IonCardHeader,IonCardTitle,IonCardContent,IonButton } fr
   templateUrl: './product-card.component.html',
   styleUrls: ['./product-card.component.scss'],
   standalone:true,
-  imports:[IonCard,IonImg,IonCardHeader,IonCardTitle,IonCardContent,IonButton]
+  imports:[IonCard,IonImg,IonCardHeader,IonCardTitle,IonCardContent,IonButton,RouterLink]
 })
 export class ProductCardComponent {
   product = {

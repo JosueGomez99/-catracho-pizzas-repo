@@ -6,11 +6,12 @@
   <ion-card-content>
     {{ product.description }}
     <br>
-    Desde:    <span style="color: red">LPS. 329.00</span>
+    <span style="font-weight: bold;">Desde:</span>    <span style="color: red; font-weight: bold;">LPS. 329.00</span>
   </ion-card-content>
-  <span>CANTIDAD:</span>
-  <ion-button (click)="incrementQuantity()" size="small">+</ion-button>
-  <ion-button size="small" >{{ quantity }}</ion-button>
-  <ion-button (click)="decrementQuantity()" size="small">-</ion-button>
-  <ion-button (click)="orderProduct()" class="ion-margin-start">Ordenar</ion-button>
+  <span style="font-weight: bold;">CANTIDAD:</span>
+  <ion-button (click)="incrementQuantity()" size="small" color="light">+</ion-button>
+  <ion-button size="small" color="light">{{ quantity }}</ion-button>
+  <ion-button (click)="decrementQuantity()" size="small" color="light">-</ion-button>
+  <ion-button (click)="orderProduct()" class="ion-margin-start" color="success">Ordenar</ion-button>
 </ion-card>
+<ion-button size="small" routerLink="/home" color="secondary" class="menu-button">Home</ion-button>
