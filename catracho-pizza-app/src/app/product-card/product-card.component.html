@@ -1,0 +1,16 @@
+<ion-card>
+  <ion-img [src]="product.image" alt="Product Image"></ion-img>
+  <ion-card-header>
+    <ion-card-title style="color: red">{{ product.title }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{ product.description }}
+    <br>
+    Desde:    <span style="color: red">LPS. 329.00</span>
+  </ion-card-content>
+  <span>CANTIDAD:</span>
+  <ion-button (click)="incrementQuantity()" size="small">+</ion-button>
+  <ion-button size="small" >{{ quantity }}</ion-button>
+  <ion-button (click)="decrementQuantity()" size="small">-</ion-button>
+  <ion-button (click)="orderProduct()" class="ion-margin-start">Ordenar</ion-button>
+</ion-card>
